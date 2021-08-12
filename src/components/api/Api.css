@@ -1,0 +1,8 @@
+.subItems{
+    margin-left: 100px;
+    border: 2px solid rgb(255, 18, 77);
+    border-radius: 10px;
+}
+.subItems p{
+    cursor: pointer;
+}

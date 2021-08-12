@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Api from './components/api/Api';
+
+const click=()=>{
+  document.getElementById('data').style.display='block'
+  document.getElementById('welcome').style.display='none'
+}
+const back = ()=>{
+  document.getElementById('data').style.display='none'
+  document.getElementById('welcome').style.display='block'
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div id='welcome'>
+      <h1>Welcome To Sprink</h1>
+      <button className="btn-menu" onClick={click}>
+        Menu
+      </button>
+      </div>
+      <div id='data'>
+        <button onClick={back}>Back</button>
+        <Api/>
+      </div>
+    </>
   );
 }
 

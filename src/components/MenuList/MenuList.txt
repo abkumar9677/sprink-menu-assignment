@@ -1,0 +1,119 @@
+import React, { Component } from 'react'
+import axios from 'axios'
+import './Api.css'
+import Modal from 'react-modal';
+export default class Api extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            id:null,
+            data: [],
+            isActive:false,
+            menu:null,
+            sub_item:null
+        };
+        }
+        toggleModal=(id)=>{
+            this.setState({
+                isActive:!this.state.isActive,
+                id:id
+            })
+        }
+
+    componentDidMount() {
+    this._isMounted = true;
+    Modal.setAppElement('body');
+    axios.get(`https://jsonblob.com/api/4e6e6a57-eb72-11eb-9eff-b5f91494da60`)
+    .then(dataa =>{
+        console.log(dataa.data.categorys)
+        this.setState({
+            data : dataa.data.categorys
+        })
+    })
+    .catch(err=>console.log(err))
+    }
+
+       
+    click=()=>{
+        console.log('clicked')
+    }
+    render(){
+        return(
+            <>
+            Hello
+            {
+                this.state.data.map((menuName,i)=>
+                <div key={i}>
+                    {menuName.name} 
+                    {/* Appeteaser */}
+                    <div className="subItems">
+                        {this.setState({
+                            menu:menuName
+                        })}
+                        {menuName['menu-items'].map((subItem,i)=>
+
+                        <p key={i} onClick={()=>console.log('clicked')}>
+                        {subItem.name}
+                        {/* Chicken */}
+                        <div > 
+                        </div>
+                        </p>
+                        )}
+                    </div>
+                </div>
+                )
+            }
+
+            
+            </>
+        )
+    }
+    }
+
+    
+
+
+  
+  
+    <Modal
+        isOpen={this.state.isActive}
+        onRequestClose={this.toggleModal}
+        >
+  
+    {subItem['sub-items'].map((description,i) => {
+    
+        // 
+    // if(this.state.id===description.id){
+        
+                             
+        <div key={i}>
+        
+        Item Name: {description.name}<br/>
+        Description: {description.description}<br/>
+        Category Name: {description.category_name}<br/>
+        Cuisine Name: {description.cuisine_name}<br/>
+        Discount: {description.discount.amount}<br/>
+        Price: {description.price}<br/>
+        <button onClick={this.toggleModal}>Close</button>
+        </div>
+    }
+        </Modal>
+
+
+        if(this.state.id===i){
+        return (<div key={i}>
+        
+        Item Name: {description.name}<br/>
+        Description: {description.description}<br/>
+        Category Name: {description.category_name}<br/>
+        Cuisine Name: {description.cuisine_name}<br/>
+        Discount: {description.discount.amount}<br/>
+        Price: {description.price}<br/>
+        <button onClick={this.toggleModal}>Close</button>
+        </div>
+        )
+    }
+    return null
+}
+            
+        )
