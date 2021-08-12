@@ -1,10 +1,13 @@
 # Project Overview
 Link to the site: https://6114f7ca335326000795d05a--stupefied-ritchie-82c847.netlify.app/
 
-![welcomePage](.\src\img\welcome.png)
-![welcomePage](.\src\img\api-data.png)
-![welcomePage](.\src\img\mobile-look.png)
-![welcomePage](.\src\img\mobile-look1.png)
+### Desktop View
+![welcomePage](https://github.com/abkumar9677/sprink-menu-assignment/blob/main/src/img/welcome.png?raw=true)
+![ApiView](https://github.com/abkumar9677/sprink-menu-assignment/blob/main/src/img/api-data.png?raw=true)
+
+### Mobile View
+![welcomePage-Mobile](https://github.com/abkumar9677/sprink-menu-assignment/blob/main/src/img/mobile-look.png?raw=true)
+![ApiView-Mobile](https://github.com/abkumar9677/sprink-menu-assignment/blob/main/src/img/mobile-look1.png?raw=true)
 
 
 ## To run locally
