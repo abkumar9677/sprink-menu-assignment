@@ -26,8 +26,8 @@
   display: none;
 
 }
-.body{
-  background: url(./back2.jpg);
+body{
+  background: url(./back2.jpg) center center fixed;
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -43,4 +43,27 @@
   margin-top: 200px;
   padding: 50px;
   color:white;
+}
+#data{
+  color: antiquewhite;
+  font-weight: 600;
+  font-variant-caps: unicase;
+}
+
+.btn-back{
+    width: 10em;
+    height: 3em;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    border:2.5px solid rgb(129, 126, 122);
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.btn-back:hover{
+    background-color: rgba(73, 71, 69, 0.473);
+    color:rgb(255, 255, 255);
 }

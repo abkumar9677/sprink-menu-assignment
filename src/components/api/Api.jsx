@@ -46,7 +46,7 @@ export default class Api extends Component {
                     // alert('Clicked')
                     console.log(item)
                     return(
-                        <div key={i}>
+                        <div key={i} className="modall">
                             
                         Item Name: {item.name}<br/>
                         Description: {item.description}<br/>
@@ -54,7 +54,7 @@ export default class Api extends Component {
                         Cuisine Name: {item.cuisine_name}<br/>
                         Discount: {item.discount.amount}<br/>
                         Price: {item.price}<br/>
-                        <button onClick={this.toggleModal}>Close</button>
+                        
                         </div>
                     )
                 }
@@ -69,9 +69,10 @@ export default class Api extends Component {
             <>
             {
                 this.state.data.map((category,i)=>
-                <div key={i}>
+                <div key={i} className="menu">
                     {category.name} 
                     {/* Appeteaser */}
+                    <hr/>
                     <div className="subItems">
                         
                         {category['menu-items'].map((menu_items,i)=>
@@ -81,7 +82,9 @@ export default class Api extends Component {
                         {/* Chicken */}
                         </p>
                         )}
+                        
                     </div>
+                    
                 </div>
                 )
             }
@@ -90,6 +93,7 @@ export default class Api extends Component {
         isOpen={this.state.isActive}
         onRequestClose={this.toggleModal}
         >
+            <button onClick={this.toggleModal}>Close</button>
             {this.RenderModalData()}
   
         </Modal>

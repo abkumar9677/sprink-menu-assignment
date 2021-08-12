@@ -20,7 +20,7 @@ function App() {
       </button>
       </div>
       <div id='data'>
-        <button onClick={back}>Back</button>
+        <button className="btn-back" onClick={back}>Back</button>
         <Api/>
       </div>
     </>

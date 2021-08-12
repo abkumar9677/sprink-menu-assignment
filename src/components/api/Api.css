@@ -1,8 +1,38 @@
 .subItems{
     margin-left: 100px;
-    border: 2px solid rgb(255, 18, 77);
+    border: 2px solid rgb(114, 114, 145);
     border-radius: 10px;
+    background-color: rgba(41, 33, 33, 0.8);
 }
 .subItems p{
     cursor: pointer;
+    margin-left: 10px;
 }
+.menu{
+    border: 2px solid white;
+    background-color: rgba(1, 1, 1, 0.8);
+    margin: 8px;
+    padding: auto;
+}
+.modall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: -webkit-fill-available;
+    font-size: larger;
+    font-weight: 600;
+    background: dimgrey;
+    color: antiquewhite;
+    padding: 5px;
+}
+@media only screen and (max-width: 400px) {
+    .subItems{
+        margin-left: 0;
+    }
+    .modall{
+        font-size: small;
+        font-weight: 400;
+        padding: 3px;
+    }
+  }
+
