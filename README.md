@@ -1,3 +1,19 @@
+# Project Overview
+
+![welcomePage](src\img\welcome.png)
+![welcomePage](src\img\api-data.png)
+![welcomePage](src\img\mobile-look.png)
+![welcomePage](src\img\mobile-look1.png)
+
+
+## To run locally
+
+- Download the zip file
+- run cmd  `npm install`
+- once installation done, run `npm start`
+
+JSON API used: https://jsonblob.com/api/4e6e6a57-eb72-11eb-9eff-b5f91494da60
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
