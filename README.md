@@ -1,9 +1,10 @@
 # Project Overview
+Link to the site: https://6114f7ca335326000795d05a--stupefied-ritchie-82c847.netlify.app/
 
-![welcomePage](src\img\welcome.png)
-![welcomePage](src\img\api-data.png)
-![welcomePage](src\img\mobile-look.png)
-![welcomePage](src\img\mobile-look1.png)
+![welcomePage](.\src\img\welcome.png)
+![welcomePage](.\src\img\api-data.png)
+![welcomePage](.\src\img\mobile-look.png)
+![welcomePage](.\src\img\mobile-look1.png)
 
 
 ## To run locally
